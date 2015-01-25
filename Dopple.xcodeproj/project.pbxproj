@@ -7,15 +7,60 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5019A78C1A744A52006EDF2D /* breezeblocks.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 5019A78B1A7449F4006EDF2D /* breezeblocks.m4a */; };
+		505A2E131A74624D0008F8B6 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505A2E121A74624D0008F8B6 /* Button.swift */; };
+		50D35D581A747E86001048B1 /* Deferred.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50D35D511A747E7D001048B1 /* Deferred.framework */; };
+		50D35D591A747E86001048B1 /* Deferred.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 50D35D511A747E7D001048B1 /* Deferred.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		50F727421A735474006D672B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F727411A735474006D672B /* AppDelegate.swift */; };
-		50F727441A735474006D672B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F727431A735474006D672B /* ViewController.swift */; };
+		50F727441A735474006D672B /* BoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F727431A735474006D672B /* BoardViewController.swift */; };
 		50F727471A735474006D672B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50F727451A735474006D672B /* Main.storyboard */; };
 		50F727491A735474006D672B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50F727481A735474006D672B /* Images.xcassets */; };
 		50F7274C1A735474006D672B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50F7274A1A735474006D672B /* LaunchScreen.xib */; };
 		50F727581A735474006D672B /* DoppleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F727571A735474006D672B /* DoppleTests.swift */; };
+		50F727641A7366FE006D672B /* Audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F727631A7366FE006D672B /* Audio.swift */; };
+		50F7276A1A736F16006D672B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50F727691A736F16006D672B /* AVFoundation.framework */; };
+		50F727771A737603006D672B /* Publinks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50F727721A7375ED006D672B /* Publinks.framework */; };
+		50F727791A737603006D672B /* Publinks.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 50F727721A7375ED006D672B /* Publinks.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		50F727991A7381E1006D672B /* Pipeline.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50F727961A7381D7006D672B /* Pipeline.framework */; };
+		50F7279A1A7381E1006D672B /* Pipeline.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 50F727961A7381D7006D672B /* Pipeline.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		50D35D501A747E7D001048B1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50D35D491A747E7D001048B1 /* Deferred.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 523E00A1199915C600E07C3C;
+			remoteInfo = Deferred;
+		};
+		50D35D521A747E7D001048B1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50D35D491A747E7D001048B1 /* Deferred.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 523E00AC199915C600E07C3C;
+			remoteInfo = DeferredTests;
+		};
+		50D35D541A747E7D001048B1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50D35D491A747E7D001048B1 /* Deferred.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 52B9AF1919C35F110039E5D7;
+			remoteInfo = DeferredMac;
+		};
+		50D35D561A747E7D001048B1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50D35D491A747E7D001048B1 /* Deferred.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 52B9AF2319C35F110039E5D7;
+			remoteInfo = DeferredMacTests;
+		};
+		50D35D5A1A747E87001048B1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50D35D491A747E7D001048B1 /* Deferred.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 523E00A0199915C600E07C3C;
+			remoteInfo = Deferred;
+		};
 		50F727521A735474006D672B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 50F727341A735474006D672B /* Project object */;
@@ -23,19 +68,92 @@
 			remoteGlobalIDString = 50F7273B1A735474006D672B;
 			remoteInfo = Dopple;
 		};
+		50F727711A7375ED006D672B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50F7276B1A7375ED006D672B /* Publinks.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 503E1AE61A3E8B8F00A47372;
+			remoteInfo = Publinks;
+		};
+		50F727731A7375ED006D672B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50F7276B1A7375ED006D672B /* Publinks.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 503E1AF11A3E8B8F00A47372;
+			remoteInfo = PublinksTests;
+		};
+		50F727751A7375ED006D672B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50F7276B1A7375ED006D672B /* Publinks.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 503E1B331A3EA08D00A47372;
+			remoteInfo = "Publinks-Example";
+		};
+		50F7277A1A737603006D672B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50F7276B1A7375ED006D672B /* Publinks.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 503E1AE51A3E8B8F00A47372;
+			remoteInfo = Publinks;
+		};
+		50F727951A7381D7006D672B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50F727901A7381D7006D672B /* Pipeline.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5003078A1A51295600568667;
+			remoteInfo = Pipeline;
+		};
+		50F727971A7381D7006D672B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50F727901A7381D7006D672B /* Pipeline.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 500307951A51295600568667;
+			remoteInfo = PipelineTests;
+		};
+		50F7279B1A7381E1006D672B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50F727901A7381D7006D672B /* Pipeline.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 500307891A51295600568667;
+			remoteInfo = Pipeline;
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		50F727781A737603006D672B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				50F7279A1A7381E1006D672B /* Pipeline.framework in Embed Frameworks */,
+				50F727791A737603006D672B /* Publinks.framework in Embed Frameworks */,
+				50D35D591A747E86001048B1 /* Deferred.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		5019A78B1A7449F4006EDF2D /* breezeblocks.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = breezeblocks.m4a; path = "../../../Music/iTunes/iTunes Media/Music/Unknown Artist/Unknown Album/breezeblocks.m4a"; sourceTree = "<group>"; };
+		505A2E121A74624D0008F8B6 /* Button.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		50D35D451A7470B7001048B1 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
+		50D35D491A747E7D001048B1 /* Deferred.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Deferred.xcodeproj; path = Deferred/Deferred.xcodeproj; sourceTree = "<group>"; };
 		50F7273C1A735474006D672B /* Dopple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dopple.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50F727401A735474006D672B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		50F727411A735474006D672B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		50F727431A735474006D672B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		50F727431A735474006D672B /* BoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardViewController.swift; sourceTree = "<group>"; };
 		50F727461A735474006D672B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		50F727481A735474006D672B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		50F7274B1A735474006D672B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		50F727511A735474006D672B /* DoppleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DoppleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		50F727561A735474006D672B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		50F727571A735474006D672B /* DoppleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoppleTests.swift; sourceTree = "<group>"; };
+		50F727631A7366FE006D672B /* Audio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Audio.swift; sourceTree = "<group>"; };
+		50F727691A736F16006D672B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		50F7276B1A7375ED006D672B /* Publinks.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Publinks.xcodeproj; path = Publinks/Publinks.xcodeproj; sourceTree = "<group>"; };
+		50F727901A7381D7006D672B /* Pipeline.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pipeline.xcodeproj; path = Publinks/../Pipeline/Pipeline.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +161,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50F7276A1A736F16006D672B /* AVFoundation.framework in Frameworks */,
+				50F727771A737603006D672B /* Publinks.framework in Frameworks */,
+				50F727991A7381E1006D672B /* Pipeline.framework in Frameworks */,
+				50D35D581A747E86001048B1 /* Deferred.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +178,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		50D35D4A1A747E7D001048B1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				50D35D511A747E7D001048B1 /* Deferred.framework */,
+				50D35D531A747E7D001048B1 /* DeferredTests.xctest */,
+				50D35D551A747E7D001048B1 /* DeferredMac.framework */,
+				50D35D571A747E7D001048B1 /* DeferredMacTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		50F727331A735474006D672B = {
 			isa = PBXGroup;
 			children = (
+				50F727691A736F16006D672B /* AVFoundation.framework */,
 				50F7273E1A735474006D672B /* Dopple */,
 				50F727541A735474006D672B /* DoppleTests */,
 				50F7273D1A735474006D672B /* Products */,
+				50F7276B1A7375ED006D672B /* Publinks.xcodeproj */,
+				50F727901A7381D7006D672B /* Pipeline.xcodeproj */,
+				50D35D491A747E7D001048B1 /* Deferred.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,7 +215,10 @@
 			isa = PBXGroup;
 			children = (
 				50F727411A735474006D672B /* AppDelegate.swift */,
-				50F727431A735474006D672B /* ViewController.swift */,
+				50F727431A735474006D672B /* BoardViewController.swift */,
+				505A2E121A74624D0008F8B6 /* Button.swift */,
+				50F727631A7366FE006D672B /* Audio.swift */,
+				50D35D451A7470B7001048B1 /* MyPlayground.playground */,
 				50F727451A735474006D672B /* Main.storyboard */,
 				50F727481A735474006D672B /* Images.xcassets */,
 				50F7274A1A735474006D672B /* LaunchScreen.xib */,
@@ -90,6 +230,7 @@
 		50F7273F1A735474006D672B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				5019A78B1A7449F4006EDF2D /* breezeblocks.m4a */,
 				50F727401A735474006D672B /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -112,6 +253,25 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		50F7276C1A7375ED006D672B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				50F727721A7375ED006D672B /* Publinks.framework */,
+				50F727741A7375ED006D672B /* PublinksTests.xctest */,
+				50F727761A7375ED006D672B /* Publinks-Example.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		50F727911A7381D7006D672B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				50F727961A7381D7006D672B /* Pipeline.framework */,
+				50F727981A7381D7006D672B /* PipelineTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -122,10 +282,14 @@
 				50F727381A735474006D672B /* Sources */,
 				50F727391A735474006D672B /* Frameworks */,
 				50F7273A1A735474006D672B /* Resources */,
+				50F727781A737603006D672B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				50F7277B1A737603006D672B /* PBXTargetDependency */,
+				50F7279C1A7381E1006D672B /* PBXTargetDependency */,
+				50D35D5B1A747E87001048B1 /* PBXTargetDependency */,
 			);
 			name = Dopple;
 			productName = Dopple;
@@ -179,6 +343,20 @@
 			mainGroup = 50F727331A735474006D672B;
 			productRefGroup = 50F7273D1A735474006D672B /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 50D35D4A1A747E7D001048B1 /* Products */;
+					ProjectRef = 50D35D491A747E7D001048B1 /* Deferred.xcodeproj */;
+				},
+				{
+					ProductGroup = 50F727911A7381D7006D672B /* Products */;
+					ProjectRef = 50F727901A7381D7006D672B /* Pipeline.xcodeproj */;
+				},
+				{
+					ProductGroup = 50F7276C1A7375ED006D672B /* Products */;
+					ProjectRef = 50F7276B1A7375ED006D672B /* Publinks.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				50F7273B1A735474006D672B /* Dopple */,
@@ -186,6 +364,72 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		50D35D511A747E7D001048B1 /* Deferred.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Deferred.framework;
+			remoteRef = 50D35D501A747E7D001048B1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		50D35D531A747E7D001048B1 /* DeferredTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = DeferredTests.xctest;
+			remoteRef = 50D35D521A747E7D001048B1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		50D35D551A747E7D001048B1 /* DeferredMac.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = DeferredMac.framework;
+			remoteRef = 50D35D541A747E7D001048B1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		50D35D571A747E7D001048B1 /* DeferredMacTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = DeferredMacTests.xctest;
+			remoteRef = 50D35D561A747E7D001048B1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		50F727721A7375ED006D672B /* Publinks.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Publinks.framework;
+			remoteRef = 50F727711A7375ED006D672B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		50F727741A7375ED006D672B /* PublinksTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = PublinksTests.xctest;
+			remoteRef = 50F727731A7375ED006D672B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		50F727761A7375ED006D672B /* Publinks-Example.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "Publinks-Example.app";
+			remoteRef = 50F727751A7375ED006D672B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		50F727961A7381D7006D672B /* Pipeline.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Pipeline.framework;
+			remoteRef = 50F727951A7381D7006D672B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		50F727981A7381D7006D672B /* PipelineTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = PipelineTests.xctest;
+			remoteRef = 50F727971A7381D7006D672B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		50F7273A1A735474006D672B /* Resources */ = {
@@ -195,6 +439,7 @@
 				50F727471A735474006D672B /* Main.storyboard in Resources */,
 				50F7274C1A735474006D672B /* LaunchScreen.xib in Resources */,
 				50F727491A735474006D672B /* Images.xcassets in Resources */,
+				5019A78C1A744A52006EDF2D /* breezeblocks.m4a in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,7 +457,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50F727441A735474006D672B /* ViewController.swift in Sources */,
+				505A2E131A74624D0008F8B6 /* Button.swift in Sources */,
+				50F727441A735474006D672B /* BoardViewController.swift in Sources */,
+				50F727641A7366FE006D672B /* Audio.swift in Sources */,
 				50F727421A735474006D672B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -228,10 +475,25 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		50D35D5B1A747E87001048B1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Deferred;
+			targetProxy = 50D35D5A1A747E87001048B1 /* PBXContainerItemProxy */;
+		};
 		50F727531A735474006D672B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 50F7273B1A735474006D672B /* Dopple */;
 			targetProxy = 50F727521A735474006D672B /* PBXContainerItemProxy */;
+		};
+		50F7277B1A737603006D672B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Publinks;
+			targetProxy = 50F7277A1A737603006D672B /* PBXContainerItemProxy */;
+		};
+		50F7279C1A7381E1006D672B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Pipeline;
+			targetProxy = 50F7279B1A7381E1006D672B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -336,6 +598,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = Dopple/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -346,6 +609,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = Dopple/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -405,6 +669,7 @@
 				50F7275D1A735474006D672B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		50F7275E1A735474006D672B /* Build configuration list for PBXNativeTarget "DoppleTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +678,7 @@
 				50F727601A735474006D672B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
