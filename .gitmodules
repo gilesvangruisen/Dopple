@@ -1,0 +1,9 @@
+[submodule "Publinks"]
+	path = Publinks
+	url = git://github.com/gilesvangruisen/Publinks.git
+[submodule "Pipeline"]
+	path = Pipeline
+	url = git://github.com/gilesvangruisen/Pipeline.git
+[submodule "Deferred"]
+	path = Deferred
+	url = git://github.com/bignerdranch/Deferred.git
