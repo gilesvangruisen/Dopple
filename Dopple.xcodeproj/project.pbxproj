@@ -9,13 +9,14 @@
 /* Begin PBXBuildFile section */
 		5019A78C1A744A52006EDF2D /* breezeblocks.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 5019A78B1A7449F4006EDF2D /* breezeblocks.m4a */; };
 		504A52F91A74A2930062D158 /* BoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504A52F81A74A2930062D158 /* BoardViewController.swift */; };
+		504A530C1A758E630062D158 /* Recorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504A530B1A758E630062D158 /* Recorder.swift */; };
 		505A2E131A74624D0008F8B6 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505A2E121A74624D0008F8B6 /* Button.swift */; };
 		50F727421A735474006D672B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F727411A735474006D672B /* AppDelegate.swift */; };
 		50F727471A735474006D672B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50F727451A735474006D672B /* Main.storyboard */; };
 		50F727491A735474006D672B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50F727481A735474006D672B /* Images.xcassets */; };
 		50F7274C1A735474006D672B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50F7274A1A735474006D672B /* LaunchScreen.xib */; };
 		50F727581A735474006D672B /* DoppleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F727571A735474006D672B /* DoppleTests.swift */; };
-		50F727641A7366FE006D672B /* Audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F727631A7366FE006D672B /* Audio.swift */; };
+		50F727641A7366FE006D672B /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F727631A7366FE006D672B /* Player.swift */; };
 		50F7276A1A736F16006D672B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50F727691A736F16006D672B /* AVFoundation.framework */; };
 		50F727771A737603006D672B /* Publinks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50F727721A7375ED006D672B /* Publinks.framework */; };
 		50F727791A737603006D672B /* Publinks.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 50F727721A7375ED006D672B /* Publinks.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -100,6 +101,7 @@
 /* Begin PBXFileReference section */
 		5019A78B1A7449F4006EDF2D /* breezeblocks.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = breezeblocks.m4a; path = "../../../Music/iTunes/iTunes Media/Music/Unknown Artist/Unknown Album/breezeblocks.m4a"; sourceTree = "<group>"; };
 		504A52F81A74A2930062D158 /* BoardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoardViewController.swift; sourceTree = "<group>"; };
+		504A530B1A758E630062D158 /* Recorder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recorder.swift; sourceTree = "<group>"; };
 		505A2E121A74624D0008F8B6 /* Button.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 		50F7273C1A735474006D672B /* Dopple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dopple.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50F727401A735474006D672B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -110,7 +112,7 @@
 		50F727511A735474006D672B /* DoppleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DoppleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		50F727561A735474006D672B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		50F727571A735474006D672B /* DoppleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoppleTests.swift; sourceTree = "<group>"; };
-		50F727631A7366FE006D672B /* Audio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Audio.swift; sourceTree = "<group>"; };
+		50F727631A7366FE006D672B /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		50F727691A736F16006D672B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		50F7276B1A7375ED006D672B /* Publinks.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Publinks.xcodeproj; path = Publinks/Publinks.xcodeproj; sourceTree = "<group>"; };
 		50F727901A7381D7006D672B /* Pipeline.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pipeline.xcodeproj; path = Publinks/../Pipeline/Pipeline.xcodeproj; sourceTree = "<group>"; };
@@ -137,6 +139,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		504A53101A758F420062D158 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				504A530B1A758E630062D158 /* Recorder.swift */,
+				50F727631A7366FE006D672B /* Player.swift */,
+			);
+			name = Audio;
+			sourceTree = "<group>";
+		};
+		504A53111A758F480062D158 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				504A52F81A74A2930062D158 /* BoardViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		504A53121A758F4E0062D158 /* Reusable Views */ = {
+			isa = PBXGroup;
+			children = (
+				505A2E121A74624D0008F8B6 /* Button.swift */,
+			);
+			name = "Reusable Views";
+			sourceTree = "<group>";
+		};
 		50F727331A735474006D672B = {
 			isa = PBXGroup;
 			children = (
@@ -162,9 +189,9 @@
 			isa = PBXGroup;
 			children = (
 				50F727411A735474006D672B /* AppDelegate.swift */,
-				505A2E121A74624D0008F8B6 /* Button.swift */,
-				504A52F81A74A2930062D158 /* BoardViewController.swift */,
-				50F727631A7366FE006D672B /* Audio.swift */,
+				504A53121A758F4E0062D158 /* Reusable Views */,
+				504A53111A758F480062D158 /* View Controllers */,
+				504A53101A758F420062D158 /* Audio */,
 				50F727451A735474006D672B /* Main.storyboard */,
 				50F727481A735474006D672B /* Images.xcassets */,
 				50F7274A1A735474006D672B /* LaunchScreen.xib */,
@@ -370,8 +397,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				504A530C1A758E630062D158 /* Recorder.swift in Sources */,
 				505A2E131A74624D0008F8B6 /* Button.swift in Sources */,
-				50F727641A7366FE006D672B /* Audio.swift in Sources */,
+				50F727641A7366FE006D672B /* Player.swift in Sources */,
 				50F727421A735474006D672B /* AppDelegate.swift in Sources */,
 				504A52F91A74A2930062D158 /* BoardViewController.swift in Sources */,
 			);

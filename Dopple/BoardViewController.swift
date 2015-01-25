@@ -32,13 +32,9 @@ class BoardViewController: UIViewController {
         middleButton.uplink >>> middleUp
     }
 
-    func middleDown(button: Button) {
+    func middleDown(button: Button) {}
 
-    }
-
-    func middleUp(button: Button) {
-
-    }
+    func middleUp(button: Button) {}
 
 }
 
@@ -71,7 +67,7 @@ class PlaybackViewController: BoardViewController {
                     let player = Player(sound: self.urls[index])
                     self.players += [player]
 
-                    player.play()
+                    player.playFromBeginning()
                 }
             }
         }
