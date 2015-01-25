@@ -11,45 +11,44 @@ import AVFoundation
 import Publinks
 import Pipeline
 
-public struct Sound {
-    public let url: NSURL
-}
-
 public class Player: NSObject, AVAudioPlayerDelegate {
 
-    let sound: Sound
+    let sound: NSURL
     var audioPlayer: AVAudioPlayer?
     var error: NSError?
 
-    init(sound: Sound) {
+    init(sound: NSURL) {
         self.sound = sound
 
         super.init()
 
         var error: NSError?
 
-        audioPlayer = AVAudioPlayer(contentsOfURL: self.sound.url, error: &error)
+        audioPlayer = AVAudioPlayer(contentsOfURL: self.sound, error: &error)
+
+        if let error = error {
+            println("[Player error] \(error)")
+        }
 
         audioPlayer?.delegate = self
         audioPlayer?.prepareToPlay()
 
-        println(audioPlayer)
-
-        if let error = error {
-            println(error)
-        }
     }
 
     public func audioPlayerDidFinishPlaying(player: AVAudioPlayer!, successfully flag: Bool) {
-        println("finished \(flag)")
+        println("[Player finished] \(flag)")
     }
 
     public func audioPlayerDecodeErrorDidOccur(player: AVAudioPlayer!, error: NSError!) {
-        println(error)
+        println("[Player error] \(error)")
     }
 
     public func play() {
-        let playing = audioPlayer?.play()
+        audioPlayer?.play()
+    }
+
+    public func stop() {
+        audioPlayer?.stop()
     }
 
 }
@@ -58,7 +57,7 @@ public class Recorder: NSObject, AVAudioRecorderDelegate {
 
     var audioRecorder: AVAudioRecorder?
 
-    public let link = Publink<Sound>()
+    public let link = Publink<NSURL>()
 
     public init(URL recorderURL: NSURL?) {
         super.init()
@@ -71,7 +70,7 @@ public class Recorder: NSObject, AVAudioRecorderDelegate {
             audioRecorder?.delegate = self
 
             if let error = error {
-                println(error)
+                println("[Recorder error] \(error)")
             }
         }
     }
@@ -87,11 +86,11 @@ public class Recorder: NSObject, AVAudioRecorderDelegate {
     }
 
     public func audioRecorderDidFinishRecording(recorder: AVAudioRecorder!, successfully flag: Bool) {
-        link.publish(Sound(url: audioRecorder!.url!))
+        link.publish(recorder.url)
     }
 
     public func audioRecorderEncodeErrorDidOccur(recorder: AVAudioRecorder!, error: NSError!) {
-        println(error)
+        println("[Recorder error] \(error)")
     }
 
     public func record() {

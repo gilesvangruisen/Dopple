@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
     <scenes>
-        <!--Board View Controller-->
+        <!--Playback View Controller-->
         <scene sceneID="LCI-rx-pVe">
             <objects>
-                <viewController storyboardIdentifier="BoardViewController" id="nQP-TN-mnx" customClass="BoardViewController" customModule="Dopple" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PlaybackViewController" id="nQP-TN-mnx" customClass="PlaybackViewController" customModule="Dopple" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="H0j-yv-PM7"/>
                         <viewControllerLayoutGuide type="bottom" id="DJi-Ok-7jJ"/>
@@ -65,6 +65,13 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zge-uY-JAX" customClass="Button" customModule="Dopple" customModuleProvider="target">
+                                <rect key="frame" x="167" y="0.0" width="167" height="187.5"/>
+                                <color key="backgroundColor" red="0.99360054731369019" green="0.69028258323669434" blue="0.30986493825912476" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vMQ-Vf-v7w" customClass="Button" customModule="Dopple" customModuleProvider="target">
                                 <rect key="frame" x="303" y="158" width="60" height="60"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -72,7 +79,7 @@
                                     <constraint firstAttribute="width" constant="60" id="BJf-2d-12f"/>
                                     <constraint firstAttribute="height" constant="60" id="hu6-Ux-4OU"/>
                                 </constraints>
-                                <state key="normal">
+                                <state key="normal" title="P">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -80,13 +87,9 @@
                                         <integer key="value" value="30"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
-                            </button>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zge-uY-JAX" customClass="Button" customModule="Dopple" customModuleProvider="target">
-                                <rect key="frame" x="167" y="0.0" width="167" height="187.5"/>
-                                <color key="backgroundColor" red="0.99360054731369019" green="0.69028258323669434" blue="0.30986493825912476" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
+                                <connections>
+                                    <segue destination="98a-Bg-3gc" kind="show" id="RLd-9A-VaA"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -112,6 +115,115 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O43-VQ-cPT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="75.5" y="403.5"/>
+        </scene>
+        <!--Record View Controller-->
+        <scene sceneID="MPL-yf-Flx">
+            <objects>
+                <viewController storyboardIdentifier="RecordViewController" modalTransitionStyle="flipHorizontal" id="98a-Bg-3gc" customClass="RecordViewController" customModule="Dopple" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TDe-4z-Nnu"/>
+                        <viewControllerLayoutGuide type="bottom" id="f5B-6F-71M"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Mck-oo-bqD">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pkz-O9-eOd" customClass="Button" customModule="Dopple" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="167" height="187.5"/>
+                                <color key="backgroundColor" red="0.9880770445" green="0.32571858170000001" blue="0.3259520829" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EE4-dN-sJz" customClass="Button" customModule="Dopple" customModuleProvider="target">
+                                <rect key="frame" x="334" y="0.0" width="167" height="187.5"/>
+                                <color key="backgroundColor" red="0.90077018740000003" green="1" blue="0.31052270529999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tSE-gk-4wd" customClass="Button" customModule="Dopple" customModuleProvider="target">
+                                <rect key="frame" x="500" y="0.0" width="167" height="187.5"/>
+                                <color key="backgroundColor" red="0.33943775300000001" green="1" blue="0.48327118159999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yVf-aS-6xb" customClass="Button" customModule="Dopple" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="187" width="167" height="188.5"/>
+                                <color key="backgroundColor" red="0.32106810810000003" green="0.71897691490000004" blue="0.99878460170000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cPN-qI-xnZ" customClass="Button" customModule="Dopple" customModuleProvider="target">
+                                <rect key="frame" x="167" y="187" width="166.5" height="188.5"/>
+                                <color key="backgroundColor" red="0.30729231239999999" green="0.37743514779999998" blue="0.99847310779999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IiQ-tz-4Ug" customClass="Button" customModule="Dopple" customModuleProvider="target">
+                                <rect key="frame" x="333" y="187" width="167" height="188.5"/>
+                                <color key="backgroundColor" red="0.75633805990000003" green="0.24837172029999999" blue="0.99887448550000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NcC-RU-WtW" customClass="Button" customModule="Dopple" customModuleProvider="target">
+                                <rect key="frame" x="500" y="187" width="166.5" height="188.5"/>
+                                <color key="backgroundColor" red="0.98716205359999998" green="0.2596511245" blue="0.68780446049999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bf3-Ul-PvN" customClass="Button" customModule="Dopple" customModuleProvider="target">
+                                <rect key="frame" x="167" y="0.0" width="167" height="187.5"/>
+                                <color key="backgroundColor" red="0.99360054730000003" green="0.69028258320000002" blue="0.3098649383" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xpo-GR-1KX" customClass="Button" customModule="Dopple" customModuleProvider="target">
+                                <rect key="frame" x="303" y="158" width="60" height="60"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="2pg-6Y-wMi"/>
+                                    <constraint firstAttribute="height" constant="60" id="gNE-Ub-CQw"/>
+                                </constraints>
+                                <state key="normal" title="R">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="xpo-GR-1KX" secondAttribute="centerX" id="W6c-yu-c6g"/>
+                            <constraint firstAttribute="centerY" secondItem="xpo-GR-1KX" secondAttribute="centerY" id="d55-Ka-Jse"/>
+                        </constraints>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="middleButton" destination="xpo-GR-1KX" id="X9s-ha-uEA"/>
+                        <outletCollection property="buttons" destination="Pkz-O9-eOd" collectionClass="NSMutableArray" id="K0Y-rg-DtH"/>
+                        <outletCollection property="buttons" destination="bf3-Ul-PvN" collectionClass="NSMutableArray" id="vml-NZ-nkm"/>
+                        <outletCollection property="buttons" destination="EE4-dN-sJz" collectionClass="NSMutableArray" id="zdc-3J-axB"/>
+                        <outletCollection property="buttons" destination="tSE-gk-4wd" collectionClass="NSMutableArray" id="md1-F4-j3r"/>
+                        <outletCollection property="buttons" destination="yVf-aS-6xb" collectionClass="NSMutableArray" id="zXs-BJ-5Md"/>
+                        <outletCollection property="buttons" destination="cPN-qI-xnZ" collectionClass="NSMutableArray" id="a68-j8-xCh"/>
+                        <outletCollection property="buttons" destination="IiQ-tz-4Ug" collectionClass="NSMutableArray" id="FHw-dq-DwN"/>
+                        <outletCollection property="buttons" destination="NcC-RU-WtW" collectionClass="NSMutableArray" id="G10-F5-LFJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fJ3-jf-D3L" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="75.5" y="941.5"/>
         </scene>
     </scenes>
 </document>

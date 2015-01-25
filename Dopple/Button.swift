@@ -10,8 +10,8 @@ import UIKit
 import Publinks
 
 public class Button: UIButton {
-    public var downlink = Publink<Void>()
-    public var uplink = Publink<Void>()
+    public var downlink = Publink<Button>()
+    public var uplink = Publink<Button>()
 
     public override func layoutSubviews() {
         super.layoutSubviews()
@@ -20,11 +20,11 @@ public class Button: UIButton {
     }
 
     func upPublish(sender: Button!) {
-        uplink.publish()
+        uplink.publish(self)
     }
 
     func downPublish(sender: Button!) {
-        downlink.publish()
+        downlink.publish(self)
     }
     
 }

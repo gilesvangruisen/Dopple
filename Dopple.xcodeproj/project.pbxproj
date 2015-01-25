@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		5019A78C1A744A52006EDF2D /* breezeblocks.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 5019A78B1A7449F4006EDF2D /* breezeblocks.m4a */; };
+		504A52F91A74A2930062D158 /* BoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504A52F81A74A2930062D158 /* BoardViewController.swift */; };
 		505A2E131A74624D0008F8B6 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505A2E121A74624D0008F8B6 /* Button.swift */; };
 		50D35D581A747E86001048B1 /* Deferred.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50D35D511A747E7D001048B1 /* Deferred.framework */; };
 		50D35D591A747E86001048B1 /* Deferred.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 50D35D511A747E7D001048B1 /* Deferred.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		50F727421A735474006D672B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F727411A735474006D672B /* AppDelegate.swift */; };
-		50F727441A735474006D672B /* BoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F727431A735474006D672B /* BoardViewController.swift */; };
 		50F727471A735474006D672B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50F727451A735474006D672B /* Main.storyboard */; };
 		50F727491A735474006D672B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50F727481A735474006D672B /* Images.xcassets */; };
 		50F7274C1A735474006D672B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50F7274A1A735474006D672B /* LaunchScreen.xib */; };
@@ -137,13 +137,12 @@
 
 /* Begin PBXFileReference section */
 		5019A78B1A7449F4006EDF2D /* breezeblocks.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = breezeblocks.m4a; path = "../../../Music/iTunes/iTunes Media/Music/Unknown Artist/Unknown Album/breezeblocks.m4a"; sourceTree = "<group>"; };
+		504A52F81A74A2930062D158 /* BoardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoardViewController.swift; sourceTree = "<group>"; };
 		505A2E121A74624D0008F8B6 /* Button.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
-		50D35D451A7470B7001048B1 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
 		50D35D491A747E7D001048B1 /* Deferred.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Deferred.xcodeproj; path = Deferred/Deferred.xcodeproj; sourceTree = "<group>"; };
 		50F7273C1A735474006D672B /* Dopple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dopple.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50F727401A735474006D672B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		50F727411A735474006D672B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		50F727431A735474006D672B /* BoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardViewController.swift; sourceTree = "<group>"; };
 		50F727461A735474006D672B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		50F727481A735474006D672B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		50F7274B1A735474006D672B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -215,10 +214,9 @@
 			isa = PBXGroup;
 			children = (
 				50F727411A735474006D672B /* AppDelegate.swift */,
-				50F727431A735474006D672B /* BoardViewController.swift */,
 				505A2E121A74624D0008F8B6 /* Button.swift */,
+				504A52F81A74A2930062D158 /* BoardViewController.swift */,
 				50F727631A7366FE006D672B /* Audio.swift */,
-				50D35D451A7470B7001048B1 /* MyPlayground.playground */,
 				50F727451A735474006D672B /* Main.storyboard */,
 				50F727481A735474006D672B /* Images.xcassets */,
 				50F7274A1A735474006D672B /* LaunchScreen.xib */,
@@ -458,9 +456,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				505A2E131A74624D0008F8B6 /* Button.swift in Sources */,
-				50F727441A735474006D672B /* BoardViewController.swift in Sources */,
 				50F727641A7366FE006D672B /* Audio.swift in Sources */,
 				50F727421A735474006D672B /* AppDelegate.swift in Sources */,
+				504A52F91A74A2930062D158 /* BoardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
