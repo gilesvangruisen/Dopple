@@ -1,5 +1,5 @@
 # Dopple
-for now, a keezy clone
+for now, a [keezy](http://keezy.co) clone
 
 ![](dopple.png)
 
