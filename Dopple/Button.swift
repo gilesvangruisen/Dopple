@@ -16,7 +16,7 @@ public class Button: UIButton {
     public override func layoutSubviews() {
         super.layoutSubviews()
         addTarget(self, action: "downPublish:", forControlEvents: .TouchDown)
-        addTarget(self, action: "upPublish:", forControlEvents: .TouchUpInside)
+        addTarget(self, action: "upPublish:", forControlEvents: .TouchUpInside | .TouchUpOutside)
     }
 
     func upPublish(sender: Button!) {
