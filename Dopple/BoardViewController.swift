@@ -26,7 +26,10 @@ class BoardViewController: UIViewController {
     override func viewDidLoad() {
         var error: NSError?
         AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayAndRecord, error: &error)
+//        UInt32 audioRouteOverride = kAudioSessionOverrideAudioRoute_Speaker;
+//        AudioSessionSetProperty (kAudioSessionProperty_OverrideAudioRoute,sizeof (audioRouteOverride),&audioRouteOverride);
         AVAudioSession.sharedInstance().setActive(true, error: &error)
+        AVAudioSession.sharedInstance().overrideOutputAudioPort(AVAudioSessionPortOverride.Speaker, error: &error)
 
         middleButton.downlink >>> middleDown
         middleButton.uplink >>> middleUp
@@ -112,7 +115,6 @@ class RecordViewController: BoardViewController {
     }
 
 }
-
 
 public func recordingURLs(n: Int) -> [NSURL] {
     let paths: NSArray = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)
