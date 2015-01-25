@@ -1,25 +1,117 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="nQP-TN-mnx">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="ufC-wZ-h7g">
+        <!--Board View Controller-->
+        <scene sceneID="LCI-rx-pVe">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BoardViewController" id="nQP-TN-mnx" customClass="BoardViewController" customModule="Dopple" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
-                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                        <viewControllerLayoutGuide type="top" id="H0j-yv-PM7"/>
+                        <viewControllerLayoutGuide type="bottom" id="DJi-Ok-7jJ"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <view key="view" contentMode="scaleToFill" id="1lU-Gi-Jgh">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ds3-Ya-4ZT" customClass="Button" customModule="Dopple" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="167" height="187.5"/>
+                                <color key="backgroundColor" red="0.98807704448699951" green="0.32571858167648315" blue="0.32595208287239075" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P2F-wp-PAV" customClass="Button" customModule="Dopple" customModuleProvider="target">
+                                <rect key="frame" x="334" y="0.0" width="167" height="187.5"/>
+                                <color key="backgroundColor" red="0.90077018737792969" green="1" blue="0.31052270531654358" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1bY-ex-K3z" customClass="Button" customModule="Dopple" customModuleProvider="target">
+                                <rect key="frame" x="500" y="0.0" width="167" height="187.5"/>
+                                <color key="backgroundColor" red="0.33943775296211243" green="1" blue="0.48327118158340454" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P4k-tP-EkA" customClass="Button" customModule="Dopple" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="187" width="167" height="188.5"/>
+                                <color key="backgroundColor" red="0.32106810808181763" green="0.71897691488265991" blue="0.99878460168838501" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KWw-Eh-dNT" customClass="Button" customModule="Dopple" customModuleProvider="target">
+                                <rect key="frame" x="167" y="187" width="166.5" height="188.5"/>
+                                <color key="backgroundColor" red="0.30729231238365173" green="0.37743514776229858" blue="0.99847310781478882" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qy1-7w-F0e" customClass="Button" customModule="Dopple" customModuleProvider="target">
+                                <rect key="frame" x="333" y="187" width="167" height="188.5"/>
+                                <color key="backgroundColor" red="0.75633805990219116" green="0.24837172031402588" blue="0.9988744854927063" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ipH-cz-LYt" customClass="Button" customModule="Dopple" customModuleProvider="target">
+                                <rect key="frame" x="500" y="187" width="166.5" height="188.5"/>
+                                <color key="backgroundColor" red="0.98716205358505249" green="0.25965112447738647" blue="0.6878044605255127" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vMQ-Vf-v7w" customClass="Button" customModule="Dopple" customModuleProvider="target">
+                                <rect key="frame" x="303" y="158" width="60" height="60"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="BJf-2d-12f"/>
+                                    <constraint firstAttribute="height" constant="60" id="hu6-Ux-4OU"/>
+                                </constraints>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zge-uY-JAX" customClass="Button" customModule="Dopple" customModuleProvider="target">
+                                <rect key="frame" x="167" y="0.0" width="167" height="187.5"/>
+                                <color key="backgroundColor" red="0.99360054731369019" green="0.69028258323669434" blue="0.30986493825912476" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="vMQ-Vf-v7w" secondAttribute="centerX" id="SHk-eE-GuF"/>
+                            <constraint firstAttribute="centerY" secondItem="vMQ-Vf-v7w" secondAttribute="centerY" id="hP3-vd-dtI"/>
+                        </constraints>
                     </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="middleButton" destination="vMQ-Vf-v7w" id="Ie8-aB-MfE"/>
+                        <outletCollection property="buttons" destination="ds3-Ya-4ZT" collectionClass="NSMutableArray" id="XZE-yL-Cqd"/>
+                        <outletCollection property="buttons" destination="zge-uY-JAX" collectionClass="NSMutableArray" id="Is3-Ir-T9I"/>
+                        <outletCollection property="buttons" destination="P2F-wp-PAV" collectionClass="NSMutableArray" id="krs-Sv-Y35"/>
+                        <outletCollection property="buttons" destination="1bY-ex-K3z" collectionClass="NSMutableArray" id="QKy-lT-cPQ"/>
+                        <outletCollection property="buttons" destination="P4k-tP-EkA" collectionClass="NSMutableArray" id="71m-r2-SIO"/>
+                        <outletCollection property="buttons" destination="KWw-Eh-dNT" collectionClass="NSMutableArray" id="c4c-af-N2D"/>
+                        <outletCollection property="buttons" destination="Qy1-7w-F0e" collectionClass="NSMutableArray" id="IAw-JQ-cNY"/>
+                        <outletCollection property="buttons" destination="ipH-cz-LYt" collectionClass="NSMutableArray" id="GFP-f7-Boh"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O43-VQ-cPT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="75.5" y="403.5"/>
         </scene>
     </scenes>
 </document>
