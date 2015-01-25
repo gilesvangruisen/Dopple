@@ -11,7 +11,6 @@ import UIKit
 import AVFoundation
 import Pipeline
 import Publinks
-import Deferred
 
 enum BoardState: Int {
     case Record = 0
@@ -26,8 +25,6 @@ class BoardViewController: UIViewController {
     override func viewDidLoad() {
         var error: NSError?
         AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayAndRecord, error: &error)
-//        UInt32 audioRouteOverride = kAudioSessionOverrideAudioRoute_Speaker;
-//        AudioSessionSetProperty (kAudioSessionProperty_OverrideAudioRoute,sizeof (audioRouteOverride),&audioRouteOverride);
         AVAudioSession.sharedInstance().setActive(true, error: &error)
         AVAudioSession.sharedInstance().overrideOutputAudioPort(AVAudioSessionPortOverride.Speaker, error: &error)
 
