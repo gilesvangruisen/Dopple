@@ -17,6 +17,8 @@ public class Player: NSObject, AVAudioPlayerDelegate {
     var audioPlayer: AVAudioPlayer?
     var error: NSError?
 
+    let background = dispatch_queue_create("com.gilesvangruisen.Dopple.player", DISPATCH_QUEUE_SERIAL)
+
     init(sound: NSURL) {
         self.sound = sound
 
@@ -30,8 +32,10 @@ public class Player: NSObject, AVAudioPlayerDelegate {
             println("[Player error] \(error)")
         }
 
-        audioPlayer?.delegate = self
-        audioPlayer?.prepareToPlay()
+        dispatch_async(background) {
+            self.audioPlayer?.delegate = self
+            self.audioPlayer?.prepareToPlay()
+        }
 
     }
 
@@ -44,11 +48,12 @@ public class Player: NSObject, AVAudioPlayerDelegate {
     }
 
     public func play() {
-        audioPlayer?.play()
-    }
-
-    public func stop() {
-        audioPlayer?.stop()
+        dispatch_async(background) {
+            self.audioPlayer?.currentTime = 0
+//            dispatch_async(dispatch_get_main_queue()) {
+                let x = self.audioPlayer?.play()
+//            }
+        }
     }
 
 }

@@ -92,7 +92,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="vMQ-Vf-v7w" secondAttribute="centerX" id="SHk-eE-GuF"/>
                             <constraint firstAttribute="centerY" secondItem="vMQ-Vf-v7w" secondAttribute="centerY" id="hP3-vd-dtI"/>
@@ -201,7 +201,7 @@
                                 </userDefinedRuntimeAttributes>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="xpo-GR-1KX" secondAttribute="centerX" id="W6c-yu-c6g"/>
                             <constraint firstAttribute="centerY" secondItem="xpo-GR-1KX" secondAttribute="centerY" id="d55-Ka-Jse"/>

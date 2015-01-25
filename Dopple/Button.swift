@@ -20,11 +20,23 @@ public class Button: UIButton {
     }
 
     func upPublish(sender: Button!) {
+
+        self.layer.removeAllAnimations()
         uplink.publish(self)
+        UIView.animateWithDuration(0.3, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 30, options: UIViewAnimationOptions.AllowUserInteraction, animations: {
+            self.layer.transform = CATransform3DMakeScale(1, 1, 1)
+        }, completion: nil)
+
     }
 
     func downPublish(sender: Button!) {
+
+        self.layer.removeAllAnimations()
         downlink.publish(self)
+        UIView.animateWithDuration(0.3, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 30, options: UIViewAnimationOptions.AllowUserInteraction, animations: {
+            self.layer.transform = CATransform3DMakeScale(0.7, 0.7, 1)
+            }, completion: nil)
+
     }
     
 }

@@ -49,6 +49,8 @@ class PlaybackViewController: BoardViewController {
 
     var players: [Player] = [Player]()
 
+    let playbackQueue = dispatch_queue_create("com.gilesvangruisen.Dopple.playback", DISPATCH_QUEUE_SERIAL)
+
     var urls: [NSURL]! {
         didSet {
             players = urls.map { Player(sound: $0) }
@@ -63,9 +65,11 @@ class PlaybackViewController: BoardViewController {
         for (index, button) in enumerate(buttons) {
 
             button.downlink >>> { button in
-                let player = self.players[index]
-                player.stop()
-                player.play()
+                dispatch_async(self.playbackQueue) {
+                    let player = Player(sound: self.urls[index])
+                    self.players += [player]
+                    player.play()
+                }
             }
         }
     }
