@@ -14,7 +14,7 @@ import Pipeline
 public class Player: NSObject, AVAudioPlayerDelegate {
 
     let sound: NSURL
-    var audioPlayer: AVAudioPlayer?
+    public var audioPlayer: AVAudioPlayer?
     var error: NSError?
 
     let background = dispatch_queue_create("com.gilesvangruisen.Dopple.player", DISPATCH_QUEUE_SERIAL)

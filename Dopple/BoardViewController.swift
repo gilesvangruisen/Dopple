@@ -66,8 +66,14 @@ class PlaybackViewController: BoardViewController {
 
             button.downlink >>> { button in
                 dispatch_async(self.playbackQueue) {
+
+                    self.players = self.players.filter { player in
+                        return player.audioPlayer?.url! != self.urls[index]
+                    }
+
                     let player = Player(sound: self.urls[index])
                     self.players += [player]
+
                     player.play()
                 }
             }
