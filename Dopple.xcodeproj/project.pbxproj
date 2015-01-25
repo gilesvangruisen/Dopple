@@ -10,8 +10,6 @@
 		5019A78C1A744A52006EDF2D /* breezeblocks.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 5019A78B1A7449F4006EDF2D /* breezeblocks.m4a */; };
 		504A52F91A74A2930062D158 /* BoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504A52F81A74A2930062D158 /* BoardViewController.swift */; };
 		505A2E131A74624D0008F8B6 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505A2E121A74624D0008F8B6 /* Button.swift */; };
-		50D35D581A747E86001048B1 /* Deferred.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50D35D511A747E7D001048B1 /* Deferred.framework */; };
-		50D35D591A747E86001048B1 /* Deferred.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 50D35D511A747E7D001048B1 /* Deferred.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		50F727421A735474006D672B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F727411A735474006D672B /* AppDelegate.swift */; };
 		50F727471A735474006D672B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50F727451A735474006D672B /* Main.storyboard */; };
 		50F727491A735474006D672B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50F727481A735474006D672B /* Images.xcassets */; };
@@ -26,41 +24,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		50D35D501A747E7D001048B1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 50D35D491A747E7D001048B1 /* Deferred.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 523E00A1199915C600E07C3C;
-			remoteInfo = Deferred;
-		};
-		50D35D521A747E7D001048B1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 50D35D491A747E7D001048B1 /* Deferred.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 523E00AC199915C600E07C3C;
-			remoteInfo = DeferredTests;
-		};
-		50D35D541A747E7D001048B1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 50D35D491A747E7D001048B1 /* Deferred.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 52B9AF1919C35F110039E5D7;
-			remoteInfo = DeferredMac;
-		};
-		50D35D561A747E7D001048B1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 50D35D491A747E7D001048B1 /* Deferred.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 52B9AF2319C35F110039E5D7;
-			remoteInfo = DeferredMacTests;
-		};
-		50D35D5A1A747E87001048B1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 50D35D491A747E7D001048B1 /* Deferred.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 523E00A0199915C600E07C3C;
-			remoteInfo = Deferred;
-		};
 		50F727521A735474006D672B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 50F727341A735474006D672B /* Project object */;
@@ -128,7 +91,6 @@
 			files = (
 				50F7279A1A7381E1006D672B /* Pipeline.framework in Embed Frameworks */,
 				50F727791A737603006D672B /* Publinks.framework in Embed Frameworks */,
-				50D35D591A747E86001048B1 /* Deferred.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,7 +101,6 @@
 		5019A78B1A7449F4006EDF2D /* breezeblocks.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = breezeblocks.m4a; path = "../../../Music/iTunes/iTunes Media/Music/Unknown Artist/Unknown Album/breezeblocks.m4a"; sourceTree = "<group>"; };
 		504A52F81A74A2930062D158 /* BoardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoardViewController.swift; sourceTree = "<group>"; };
 		505A2E121A74624D0008F8B6 /* Button.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
-		50D35D491A747E7D001048B1 /* Deferred.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Deferred.xcodeproj; path = Deferred/Deferred.xcodeproj; sourceTree = "<group>"; };
 		50F7273C1A735474006D672B /* Dopple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dopple.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50F727401A735474006D672B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		50F727411A735474006D672B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -163,7 +124,6 @@
 				50F7276A1A736F16006D672B /* AVFoundation.framework in Frameworks */,
 				50F727771A737603006D672B /* Publinks.framework in Frameworks */,
 				50F727991A7381E1006D672B /* Pipeline.framework in Frameworks */,
-				50D35D581A747E86001048B1 /* Deferred.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,17 +137,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		50D35D4A1A747E7D001048B1 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				50D35D511A747E7D001048B1 /* Deferred.framework */,
-				50D35D531A747E7D001048B1 /* DeferredTests.xctest */,
-				50D35D551A747E7D001048B1 /* DeferredMac.framework */,
-				50D35D571A747E7D001048B1 /* DeferredMacTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		50F727331A735474006D672B = {
 			isa = PBXGroup;
 			children = (
@@ -197,7 +146,6 @@
 				50F7273D1A735474006D672B /* Products */,
 				50F7276B1A7375ED006D672B /* Publinks.xcodeproj */,
 				50F727901A7381D7006D672B /* Pipeline.xcodeproj */,
-				50D35D491A747E7D001048B1 /* Deferred.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -287,7 +235,6 @@
 			dependencies = (
 				50F7277B1A737603006D672B /* PBXTargetDependency */,
 				50F7279C1A7381E1006D672B /* PBXTargetDependency */,
-				50D35D5B1A747E87001048B1 /* PBXTargetDependency */,
 			);
 			name = Dopple;
 			productName = Dopple;
@@ -343,10 +290,6 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 50D35D4A1A747E7D001048B1 /* Products */;
-					ProjectRef = 50D35D491A747E7D001048B1 /* Deferred.xcodeproj */;
-				},
-				{
 					ProductGroup = 50F727911A7381D7006D672B /* Products */;
 					ProjectRef = 50F727901A7381D7006D672B /* Pipeline.xcodeproj */;
 				},
@@ -364,34 +307,6 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		50D35D511A747E7D001048B1 /* Deferred.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Deferred.framework;
-			remoteRef = 50D35D501A747E7D001048B1 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		50D35D531A747E7D001048B1 /* DeferredTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = DeferredTests.xctest;
-			remoteRef = 50D35D521A747E7D001048B1 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		50D35D551A747E7D001048B1 /* DeferredMac.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = DeferredMac.framework;
-			remoteRef = 50D35D541A747E7D001048B1 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		50D35D571A747E7D001048B1 /* DeferredMacTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = DeferredMacTests.xctest;
-			remoteRef = 50D35D561A747E7D001048B1 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
 		50F727721A7375ED006D672B /* Publinks.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
@@ -473,11 +388,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		50D35D5B1A747E87001048B1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Deferred;
-			targetProxy = 50D35D5A1A747E87001048B1 /* PBXContainerItemProxy */;
-		};
 		50F727531A735474006D672B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 50F7273B1A735474006D672B /* Dopple */;
