@@ -99,7 +99,6 @@ public class Recorder: NSObject, AVAudioRecorderDelegate {
     }
 
     public func record() {
-        audioRecorder?.deleteRecording()
         audioRecorder?.prepareToRecord()
         audioRecorder?.record()
     }
