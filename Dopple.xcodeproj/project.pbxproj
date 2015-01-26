@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5019A78C1A744A52006EDF2D /* breezeblocks.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 5019A78B1A7449F4006EDF2D /* breezeblocks.m4a */; };
 		504A52F91A74A2930062D158 /* BoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504A52F81A74A2930062D158 /* BoardViewController.swift */; };
 		504A530C1A758E630062D158 /* Recorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504A530B1A758E630062D158 /* Recorder.swift */; };
 		505A2E131A74624D0008F8B6 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505A2E121A74624D0008F8B6 /* Button.swift */; };
@@ -99,7 +98,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		5019A78B1A7449F4006EDF2D /* breezeblocks.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = breezeblocks.m4a; path = "../../../Music/iTunes/iTunes Media/Music/Unknown Artist/Unknown Album/breezeblocks.m4a"; sourceTree = "<group>"; };
 		504A52F81A74A2930062D158 /* BoardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoardViewController.swift; sourceTree = "<group>"; };
 		504A530B1A758E630062D158 /* Recorder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recorder.swift; sourceTree = "<group>"; };
 		505A2E121A74624D0008F8B6 /* Button.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
@@ -203,7 +201,6 @@
 		50F7273F1A735474006D672B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				5019A78B1A7449F4006EDF2D /* breezeblocks.m4a */,
 				50F727401A735474006D672B /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -379,7 +376,6 @@
 				50F727471A735474006D672B /* Main.storyboard in Resources */,
 				50F7274C1A735474006D672B /* LaunchScreen.xib in Resources */,
 				50F727491A735474006D672B /* Images.xcassets in Resources */,
-				5019A78C1A744A52006EDF2D /* breezeblocks.m4a in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
